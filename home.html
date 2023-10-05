@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link href="css/home.css" rel="stylesheet">
+        <link rel="icon" href="/images/Logo.jpg">
+        <title>Voyage</title>
+</head>
+
+<body>
+        <header class="header">
+                <nav class="nav container flex">
+                        <ul class="menu-list flex">
+                                <li><a href="#home" class="nav-link active-navlink">home</a></li>
+                                <li><a href="cities.html" class="nav-link">Cities</a></li>
+                                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                        </ul>
+                </nav>
+        </header>
+
+        <main>
+                <section class="home" id="home">
+                        <div class="home-content">
+                                <div class="swiper mySwiper">
+                                        <div class="swiper-slide">
+                                                <img src="images/Logo.jpg" class="home-img">
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">Online Tourism Guidance System</h4>
+                                                                <h2 class="homeTitle">VOYAGE</h2>
+                                                        </div>
+                                                        <a href="#menu"><button class="button">Explore</button></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                
+                <section class="section menu" id="menu">
+                        <div class="menu-container container">
+                                <div>
+                                        <h1 class="section-title">What would you like to choose from?</h1>
+                                </div>
+                                <div class="menu-row">
+                                        <div class="menu-img">
+                                                <img src="images/City.png" onclick="city()">
+                                        </div>
+                                        <div class="menu-text">
+                                                <h1 onclick="city()">Cities</h1>
+                                        </div>
+                                        <div class="menu-img">
+                                                <img src="images/Categories.png" onclick="category()">
+                                        </div>
+                                        <div class="menu-text">
+                                                <h1 onclick="category()">Categories</h1>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        
+        <script src="js/home.js"></script>
+</body>
+</html>
